@@ -8,7 +8,6 @@ import { UsersRepositories } from "../repositories/UsersRepositories";
   }
 
 class CreateUserService {
-
   async execute ({ name, email, admin }: IUserRequest ) {
     const usersRepository = getCustomRepository(UsersRepositories);
 
